@@ -1,0 +1,123 @@
+.hover-effect:hover {
+  color: #0dcaf0 !important;
+  transition: 0.5s ease-in-out;
+}
+@keyframes moveImg {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animated {
+  animation: moveImg 5s infinite linear;
+}
+
+.scal {
+  transition: transform 0.5s;
+  overflow: hidden;
+  display: inline-block;
+}
+.scal:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.1);
+  background-color: white;
+  border-radius: 10px;
+}
+.image-container {
+  filter: grayscale(100%) opacity(50%);
+  transition: 0.3s ease-in-out;
+}
+.image-container:hover {
+  filter: grayscale(0%) opacity(100%);
+  cursor: pointer;
+}
+.bg-section {
+  background: url("./task1imgs/bg.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.Portfolio {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.Portfolio img {
+  transition: transform 0.5s;
+}
+
+.Portfolio:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn-custom {
+  background-color: #0099cc;
+  color: white;
+}
+
+@media (max-width: 1023px) {
+  .About-des,
+  .About-description,
+  .portfolio-text,
+  .about-button {
+    font-size: 15px;
+  }
+  .About-head {
+    font-size: 18px;
+  }
+  .section-5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Abouts {
+    margin: 20px 0px 20px 0px;
+  }
+  .About-des,
+  .About-description,
+  .portfolio-text,
+  .about-button {
+    font-size: 14px;
+  }
+  .About-head {
+    font-size: 17px;
+  }
+  .section-5 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Abouts {
+    margin: 20px 0px 20px 0px;
+  }
+  .About-des,
+  .About-description,
+  .portfolio-text,
+  .about-button {
+    font-size: 13px;
+  }
+
+  .About-head {
+    font-size: 16px;
+  }
+  .section-5 {
+    font-size: 24px;
+  }
+}
